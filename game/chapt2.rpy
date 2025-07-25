@@ -54,9 +54,25 @@ label downstairs:
             'He hands her the broken watch.'
             hide s_stranger with Dissolve(0.5) 
             hide yuki with moveinleft
+
+            jump yuki_room
+
+        'Everyone has problems':
+            s_stranger 'Yeah. Guess that\'s what people say when they don’t want to feel too much.
+            Never mind.'
+            jump yuki_room
+
+        'Say nothing, just stare at him':
+            s_stranger 'You look like someone who forgot how to cry.'
+            'He chucles bitterly'
+            'He gets up and leaves'
+            hide s_stranger with Dissolve(0.5)
+            
             
             jump yuki_room
-            return
+
+    return
+            
 
 label yuki_room:
     scene bedroom
@@ -71,5 +87,10 @@ label yuki_room:
 
     yuki '\"I can\'t remember the last time I felt this tired. I don\'t know what\'s happening to me, but I feel like I\'m losing myself.\"'
 #journal entry  
-        
+            
+
+            
+            
+
     return
+
