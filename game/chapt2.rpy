@@ -54,9 +54,41 @@ label downstairs:
             'He hands her the broken watch.'
             hide s_stranger with Dissolve(0.5) 
             hide yuki with moveinleft
-            
+
             jump yuki_room
             return
+
+        'Everyone has problems':
+            s_stranger 'Yeah. Guess that\'s what people say when they don’t want to feel too much.
+            Never mind.'
+            jump yuki_room
+            jump no_journal
+            return
+
+
+        'Say nothing, just stare at him':
+            s_stranger 'You look like someone who forgot how to cry.'
+            'He chuckles bitterly'
+            s_stranger 'Thanks for the silence. That\'s more than I used to get.'
+            'He gets up and leaves'
+            hide s_stranger with Dissolve(0.5)
+
+
+
+
+            jump yuki_room
+            yuki 'Still blank. It\'s like it\'s waiting for something...'
+            'Let\'s write in journal.. Huh?? Try again'
+            yuki 'Memories...?'
+            yuki 'What is this place really trying to show me?'
+            'She turns off the small lamp and lays back on the bed, eyes staring at the ceiling.'
+            yuki 'I feel like Im forgetting something important. But… what?'
+
+
+            
+
+    return
+            
 
 label yuki_room:
     scene bedroom
@@ -71,5 +103,19 @@ label yuki_room:
 
     yuki '\"I can\'t remember the last time I felt this tired. I don\'t know what\'s happening to me, but I feel like I\'m losing myself.\"'
 #journal entry  
-        
+            
+label no_journal:
+    scene bedroom
+    yuki 'Still blank. It\'s like it\'s waiting for something...'
+    'Let\'s write in journal.. Huh?? Try again'
+    yuki 'Memories...?'
+    yuki 'What is this place really trying to show me?'
+    'She turns off the small lamp and lays back on the bed, eyes staring at the ceiling.'
+    yuki 'I feel like Im forgetting something important. But… what?'
+            
+            
+
     return
+    jump chapt_3
+
+
