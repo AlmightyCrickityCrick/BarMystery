@@ -35,6 +35,7 @@ image yukiawakebar = im.Scale("yukiawakebar.jpg", 1920, 1080)
 image obatthebar = im.Scale("obatthebar.png", 700, 1000)
 image obpourdrink1 = im.Scale("obpourdrink1.jpg", 1920, 1080)
 image dooropen = im.Scale("dooropen.jpg", 1920, 1080)
+image bedroom = im.Scale("bed.jpg", 1920, 1080)
 
 image obpourdrink2 = im.Scale("obpourdrink2.png", 600, 900)
 image yukidrink = im.Scale("yukidrink.png", 600, 900)
