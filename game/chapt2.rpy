@@ -70,6 +70,7 @@ label downstairs:
             
             
             jump yuki_room
+            
 
     return
             
