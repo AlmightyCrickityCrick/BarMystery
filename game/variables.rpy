@@ -25,6 +25,7 @@ image bar_yuki_kai = im.Scale("bar yuki kai.png", 1920, 1080)
 image kai_png = im.Scale("kai.png", 600, 900)
 image hall = im.Scale("hall.jpg", 1920, 1080)
 image room = im.Scale("room.jpg", 1920, 1080)
+image bedroom = im. Scale("bedroom.jpg", 1920, 1080)
 
 image yuki_angry_talk = im.Scale("angry talk.png", 700, 1000)
 image kai_inv = im.Scale("kai inverted.png", 700, 1000)
@@ -38,3 +39,4 @@ image dooropen = im.Scale("dooropen.jpg", 1920, 1080)
 
 image obpourdrink2 = im.Scale("obpourdrink2.png", 600, 900)
 image yukidrink = im.Scale("yukidrink.png", 600, 900)
+image yukicarpa = im.Scale("yukicarpa.png", 600, 900)
