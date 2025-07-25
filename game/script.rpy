@@ -1,5 +1,12 @@
 ﻿define yuki = Character(name = "Yuki", color = "#66417fff")
+define kai = Character(name = "Kai", color = "#020a52ff")
+define bartender = Character(name = "Bartender", color = "#f85205ff")
 image yuki = "Yuki.png"
+image bar_side = im.Scale("bar side.png", 1920, 1080)
+image bar_counter = im.Scale("bar counter.png", 1920, 1080)
+image bartender = im.Scale("bartender.png", 700, 1000)
+image yuki_scared = im.Scale("yuki scared.png", 734, 1000)
+image
 
 image bar = im.Scale("bar.png", 1920, 1080)
 image black = im.Scale("black.jpeg", 1920, 1080)
