@@ -1,4 +1,5 @@
-﻿define yuki = Character(name = "Yuki", color = "#66417fff")
+
+define yuki = Character(name = "Yuki", color = "#66417fff")
 define kai = Character(name = "Kai", color = "#020a52ff")
 define bartender = Character(name = "Bartender", color = "#f85205ff")
 image yuki = im.Scale("yuki.png", 600, 900)
