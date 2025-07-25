@@ -15,6 +15,8 @@ image obpourwine2 = im.Scale("obpourwine2",600, 900)
 
 define old_bartender = Character(name = "Old bartender", color = "#66417fff")
 
+image s_stranger = im.Scale("silver stranger.png", 700, 1000)
+define s_stranger = Character(name = "Silver Stranger", color = "#727272ff")
 
 image bar = im.Scale("bar.png", 1920, 1080)
 image black = im.Scale("black.jpeg", 1920, 1080)
