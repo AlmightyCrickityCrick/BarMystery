@@ -27,3 +27,8 @@ label downstairs:
     show yuki at left
     show bartender at right
     'Yuki follows him downstairs'
+    hide yuki and bartender with Dissolve(0.5)
+    show black with fade 
+    show bar_counter with fade
+    show bartender at left
+

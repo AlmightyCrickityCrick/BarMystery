@@ -1,39 +1,4 @@
-﻿define yuki = Character(name = "Yuki", color = "#66417fff")
-define kai = Character(name = "Kai", color = "#020a52ff")
-define bartender = Character(name = "Bartender", color = "#f85205ff")
-image yuki = im.Scale("yuki.png", 600, 900)
-define ob = Character(name = "Bartender", color = "#f85205ff")
-image yuki = "Yuki.png"
-image bar_side = im.Scale("bar side.png", 1920, 1080)
-image bar_counter = im.Scale("bar counter.png", 1920, 1080)
-image bartender = im.Scale("bartender.png", 700, 1000)
-image yuki_scared = im.Scale("yuki scared.png", 600, 900)
-image yuki_desperated = im.Scale("desperated.png", 600, 900)
-image ob = im.Scale("ob.png", 700, 1000)
-image yuki_scared = im.Scale("yuki scared.png", 734, 1000)
-image bar1 = im.Scale("bar1.jpg", 1920, 1080)
-image obpourwine2 = im.Scale("obpourwine2",600, 900)
-
-define old_bartender = Character(name = "Old bartender", color = "#66417fff")
-
-
-image bar = im.Scale("bar.png", 1920, 1080)
-image black = im.Scale("black.jpeg", 1920, 1080)
-image white = im.Scale("white.jpeg", 1920, 1080)
-image bar_yuki_kai = im.Scale("bar yuki kai.png", 1920, 1080)
-image kai_png = im.Scale("kai.png", 600, 900)
-image hall = im.Scale("hall.jpg", 1920, 1080)
-image room = im.Scale("room.jpg", 1920, 1080)
-
-image yuki_angry_talk = im.Scale("angry talk.png", 700, 1000)
-image kai_inv = im.Scale("kai inverted.png", 700, 1000)
-image kai_png = "kai.png"
-image yuki_scared = im.Scale("yuki scared.png", 700, 1000)
-image yukisleepbar = im.Scale("yukisleepbar.jpg", 1920, 1080)
-image yukiawakebar = im.Scale("yukiawakebar.jpg", 1920, 1080)
-image obatthebar = im.Scale("obatthebar.png", 700, 1000)
-image obpourdrink1 = im.Scale("obpourdrink1.jpg", 1920, 1080)
-image dooropen = im.Scale("dooropen.jpg", 1920, 1080)
+﻿
 
 label start:
     scene black
@@ -114,11 +79,11 @@ label beginning:
             show yuki at Position(xpos= 400, ypos= 1300)
             show obpourwine2
             "She still chooses to go to the bartender."
-            show 
+    
             ob "You left all the work to me and you still want to leave? How come?"
             yuki "That…ohh…I…"
 
 
 
-
+    jump chapter_2_start
     return
