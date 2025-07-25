@@ -39,7 +39,7 @@ label start:
     hide bar
     show bar
     show black
-    show white with Dissolve(5.0)
+    show white with Dissolve(3.0)
     "Then..light"
     #show bar 
     "A flicker"
