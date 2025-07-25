@@ -104,7 +104,7 @@ label beginning:
         "Go to the old bartender":
             "Yuki blinked. She didn’t remember walking in, let alone sitting down."
             "Still, her throat felt dry. Without replying, she nodded."
-            show at left ob 
+            show ob at left
             ob "After all, you can never resist my mastery of making drinks."
         "Try to exit the bar":
             scene dooropen
