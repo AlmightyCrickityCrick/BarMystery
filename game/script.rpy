@@ -41,7 +41,7 @@ label start:
     show black
     show white with Dissolve(3.0)
     "Then..light"
-    #show bar 
+    
     "A flicker"
     "A breath"
     hide white 
