@@ -64,7 +64,7 @@ label beginning:
     "He began to prepare an elegant cocktail in reddish colors, the taste of which I could already feel on my lips."
     menu:
         "Go to the old bartender":
-            "Yuki blinked. She didn’t remember walking in, let alone sitting down."
+            "Yuki blinked. She didn\'t remember walking in, let alone sitting down."
             "Still, her throat felt dry. Without replying, she nodded."
             ob "After all, you can never resist my mastery of making drinks."
         "Try to exit the bar":
