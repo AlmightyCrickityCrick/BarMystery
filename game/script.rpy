@@ -1,17 +1,17 @@
-
+﻿
 define yuki = Character(name = "Yuki", color = "#66417fff")
 define kai = Character(name = "Kai", color = "#020a52ff")
 define bartender = Character(name = "Bartender", color = "#f85205ff")
-image yuki = im.Scale("yuki.png", 600, 900)
+image yuki = im.Scale("Yuki.png", 600, 900)
 define ob = Character(name = "Bartender", color = "#f85205ff")
-image yuki = "Yuki.png"
+
 image bar_side = im.Scale("bar side.png", 1920, 1080)
 image bar_counter = im.Scale("bar counter.png", 1920, 1080)
 image bartender = im.Scale("bartender.png", 700, 1000)
 image yuki_scared = im.Scale("yuki scared.png", 600, 900)
 image yuki_desperated = im.Scale("desperated.png", 600, 900)
 image ob = im.Scale("ob.png", 700, 1000)
-image yuki_scared = im.Scale("yuki scared.png", 734, 1000)
+image yuki_scared = im.Scale("yuki scared.png", 600, 900)
 image bar1 = im.Scale("bar1.jpg", 1920, 1080)
 image obpourwine2 = im.Scale("obpourwine2.png",600, 900)
 image obpourdrink3  = im.Scale("obpourdrink3.png", 800, 900)
@@ -119,9 +119,10 @@ label beginning:
             "Before she can grab the doorknob, a shiver runs down her spine."
             "In the end…"
             scene bar1
-            show yuki at left #Position(xpos= 400, ypos= 500) #700
-            show obpourdrink3 at right
-            "She still chooses to go to the bartender." 
+            show yuki at Position(xpos= 400, ypos= 1300)
+            show obpourwine2
+            "She still chooses to go to the bartender."
+            
             ob "You left all the work to me and you still want to leave? How come?"
             yuki "That…ohh…I…"
 
