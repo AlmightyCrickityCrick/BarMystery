@@ -13,6 +13,8 @@ image ob = im.Scale("ob.png", 700, 1000)
 image yuki_scared = im.Scale("yuki scared.png", 734, 1000)
 image bar1 = im.Scale("bar1.jpg", 1920, 1080)
 image obpourwine2 = im.Scale("obpourwine2",600, 900)
+image obpourdrink2 = im.Scale("obpourdrink2.png", 600, 900)
+image yukidrink = im.Scale("yukidrink.png", 600, 900)
 
 define old_bartender = Character(name = "Old bartender", color = "#66417fff")
 
@@ -67,7 +69,7 @@ label start:
     "Then..light"
     
     "A flicker"
-    "A breath"
+    "A breath..."
     hide white 
 
     jump beginning
@@ -101,22 +103,48 @@ label beginning:
         "Go to the old bartender":
             "Yuki blinked. She didn’t remember walking in, let alone sitting down."
             "Still, her throat felt dry. Without replying, she nodded."
+            show at left ob 
             ob "After all, you can never resist my mastery of making drinks."
         "Try to exit the bar":
             scene dooropen
-            show yuki at Position(xpos= 400, ypos= 1300)
+            show yuki at Position(xpos= 700, ypos= 1700)
             "Clearly Yuki already stands at the door but…"
             hide yuki
             show yuki_scared at Position(xposs= 400, ypos= 1300)
             "Before she can grab the doorknob, a shiver runs down her spine."
             "In the end…"
             scene bar1
-            show yuki at Position(xpos= 400, ypos= 1300)
-            show obpourwine2
-            "She still chooses to go to the bartender."
-            show 
+            show yuki at Position(xpos= 400, ypos= 1700)
+            show obpourwine2 at Position(xpos= 700, ypos=1300)
+            "She still chooses to go to the bartender." 
             ob "You left all the work to me and you still want to leave? How come?"
             yuki "That…ohh…I…"
+
+    scene bar1
+
+    show yuki at left
+    show ob at right
+
+    "The bartender placed a dark crimson drink in front of her, the liquid swirling strangely. It shimmered, like blood and starlight mixed together."
+    
+    "\"I shouldn't... Should I? But why not? What could possibly happen…right?\""
+    
+    "She lifted the glass and drank."
+    "The taste was sweet and bitter all at once. It clawed down her throat and lit a fire in her chest. "
+    "The room pulsed. Her heartbeat slowed. Her vision shimmered like glass in the rain."
+    
+    ob "Now that you've refreshed a bit, you should get to work. "
+    ob "DejaVu doesn’t run on lazy people."
+
+    "\"DejaVu? Is this the bar’s name?\""
+
+    ob "You can start by cleaning the mess from the tables."
+    ob "His smile is thin, polite. But there’s a weight behind it—like it’s not really a question."
+    ob "Yuki looks at him, fingers still warming around the empty glass."
+
+    "\"Help clean? What even is this place...?\""
+
+
 
 
 
