@@ -92,6 +92,7 @@ label downstairs:
             
 
 screen journal:
+    
     frame:
         background Null()
         add "journal open.png" xsize 800 ysize 1200
@@ -99,10 +100,15 @@ screen journal:
         yalign 0
         xsize 200
         ysize 200
+    frame:
+        background Null()
+        add "memories" xsize 200 ysize 200
+        xalign 0.4
+        yalign 0.17
     vbox:
         box_wrap True
         xmaximum 0.5
-    hbox xalign 0.45 yalign 0.45 box_wrap True:
+    hbox xalign 0.45 yalign 0.5 box_wrap True:
         xmaximum 400
         text textjurnal size 25 color "#000000" ysize 50 
 
