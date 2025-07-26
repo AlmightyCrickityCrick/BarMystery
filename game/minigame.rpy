@@ -65,4 +65,5 @@ label start3:
 
     hide screen click_game
     "You did it!"
+    jump day1
     return
