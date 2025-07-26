@@ -3,7 +3,7 @@ label chapt3_start:
     scene bar_counter
     with fade
 
-    show yuki at center  
+    show tired at center  
 
     "Yuki opened her eyes again. Third time."
     "The bar was silent. Early morning dust hung in the air like a second breath."
@@ -19,7 +19,7 @@ label chapt3_start:
 
     bartender "The counters, the bottles, the floors. Take your pick."
 
-    show tired at center
+    show yuki at center
     yuki "Fine... Let’s get it over with."
 
     "Her fingers curled around the damp cloth. Same motions. Same silence. Something in the air felt different, though."
@@ -34,11 +34,11 @@ label chapt3_start:
 
     "A low mechanical click."
 
-    show emma at right  
+    show emmakey at right  
 
     "She turned to see a strange woman in a pale suit placing something on the table: a worn key."
 
-    hide emma
+    hide emmakey
 
     "Yuki blinked. It wasn’t there a second ago."
     "The woman vanished the moment Yuki turned away. No goodbye. No trace."
@@ -122,7 +122,7 @@ label enter_room:
 
     yuki "Why do I remember this now...? Who was he?"
     hide screen journal
-
+    jump chapter_4_piano
     return
 
 label walk_past:
@@ -146,6 +146,7 @@ label walk_past:
     $ textjurnal = '\n\"Try again.\"'
     'silence'
     hide screen journal
+    jump chapter_4_piano
     return
 
 label leave_key:
@@ -170,5 +171,5 @@ label leave_key:
     scene black with fade
 
     "Yuki wakes up at the bar. The day begins again."
-
+    jump chapter_4_piano
     return

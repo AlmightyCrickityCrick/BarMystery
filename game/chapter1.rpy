@@ -44,7 +44,7 @@ label menu1:
             "Yuki blinked. She didn\'t remember walking in, let alone sitting down."
             "Still, her throat felt dry. Without replying, she nodded."
             bartender "After all, you can never resist my mastery of making drinks."
-    jump menu1
+            jump menu1
         "Try to exit the bar":
             scene dooropen
             show yuki at center
@@ -56,3 +56,6 @@ label menu1:
             scene bar1
             show yuki at Position(xpos= 400, ypos= 1300)
             show obpourwine2
+
+    jump chapter_2_start
+    return
