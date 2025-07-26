@@ -87,12 +87,12 @@ label start:
     
     
     
-    "Beside the counter stood an old bartender, motionless except for his hand slowly polishing a glass."
-    "His face was lined with age and stories, his gaze unreadable."
     
-    scene bar
-    show obpourdrink at right
-    "He began to prepare an elegant cocktail in reddish colors, the taste of which I could already feel on my lips."
+    
+    
+
+    
+    
     menu:
         "Go to the old bartender":
             "Yuki blinked. She didn\'t remember walking in, let alone sitting down."
@@ -203,12 +203,12 @@ label start:
     "And as her eyes moved across the page, she felt something stirring inside her. "
     "Something old. "
     "Something broken…"
-    jump chapter_2_start
+    
 
 
 
 
 
 
-    jump chapter_2_start
+
     return

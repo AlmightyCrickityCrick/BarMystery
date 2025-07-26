@@ -24,10 +24,35 @@ label sofa:
     hide scene sofa with fade
     jump bar
 label bar:
-    scene 
-    show polish_glass
-    "Beside the counter stood an old bartender, motionless except for his hand slowly polishing a glass."
+    scene bar
+    show polish_glass at right
+    "Beside the counter stood an bartender, motionless except for his hand slowly polishing a glass."
+    show yuki with moveinleft
+    polish_glass "You look like you would rather go for something strong today,Yuki."
+    hide polish_grass
     "His face was lined with age and stories, his gaze unreadable."
+    show pouring_wine at right
+    "He began to prepare an elegant cocktail in reddish colors, the taste of which I could already feel on my lips."
+    hide pouring_wine
+    hide yuki
+    show bartender_talk at left
+    show yuki_drink at right
 
-    jump 
-    return
+label menu1:
+    menu:
+        "Go to the old bartender":
+            "Yuki blinked. She didn\'t remember walking in, let alone sitting down."
+            "Still, her throat felt dry. Without replying, she nodded."
+            bartender "After all, you can never resist my mastery of making drinks."
+    jump menu1
+        "Try to exit the bar":
+            scene dooropen
+            show yuki at center
+            "Clearly Yuki already stands at the door but…"
+            hide yuki
+            show yuki_scared at Position(xposs= 400, ypos= 1300)
+            "Before she can grab the doorknob, a shiver runs down her spine."
+            "In the end…"
+            scene bar1
+            show yuki at Position(xpos= 400, ypos= 1300)
+            show obpourwine2
