@@ -28,3 +28,6 @@ label bar:
     show polish_glass
     "Beside the counter stood an old bartender, motionless except for his hand slowly polishing a glass."
     "His face was lined with age and stories, his gaze unreadable."
+
+    jump chapter_2_start
+    return

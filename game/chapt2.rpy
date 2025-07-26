@@ -125,21 +125,21 @@ label yuki_room:
     'The journal opens on its own. A new page reveals itself, written in trembling ink.'
     $ textjurnal = "I used to speak into silence. \nWords floated like dust in an empty house— \nno one there to catch them.\nNo arms ever reached out. No eyes ever stayed.\nThey were always busy, always tired,\nalways somewhere else.\nAnd I—I learned to shrink.\nTo disappear, so they wouldn’t have to.\nSome nights I’d pretend I was a ghost.\nAt least ghosts get noticed.\nAt least they make things move."
     yuki '\"I can\'t remember the last time I felt this tired. I don\'t know what\'s happening to me, but I feel like I\'m losing myself.\"'
+    hide screen journal
     $ textjurnal = ""
     
 #journal entry  
             
 label no_journal:
     scene bedroom
+    show yuki at center with fade
     yuki 'Still blank. It\'s like it\'s waiting for something...'
     'Let\'s write in journal.. Huh?? Try again'
     yuki 'Memories...?'
     yuki 'What is this place really trying to show me?'
     'She turns off the small lamp and lays back on the bed, eyes staring at the ceiling.'
     yuki 'I feel like Im forgetting something important. But… what?'
-            
-            
-
+    jump chapt3_start
     return
     
 

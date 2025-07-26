@@ -1,4 +1,4 @@
-label deja_vu_start:
+label chapt3_start:
 
     scene bar_counter
     with fade
@@ -19,7 +19,7 @@ label deja_vu_start:
 
     bartender "The counters, the bottles, the floors. Take your pick."
 
-    show yuki tired at center
+    show tired at center
     yuki "Fine... Let’s get it over with."
 
     "Her fingers curled around the damp cloth. Same motions. Same silence. Something in the air felt different, though."
@@ -52,11 +52,11 @@ label deja_vu_start:
     "But there were no room numbers in Déjà Vu. Not that she’d seen."
 
     menu:
-        "What will Yuki do?":
-            "Take the key":
-                jump take_key
-            "Leave the key":
-                jump leave_key
+        "Take the key":
+            jump take_key
+
+        "Leave the key":
+            jump leave_key
 
 label take_key:
 
@@ -69,15 +69,14 @@ label take_key:
     "Another door was open now—one she hadn’t noticed before. Room 206. Faint light glowed through the crack."
 
     menu:
-        "Do you enter the room?":
-            "Enter Room 206":
-                jump enter_room
-            "Walk past the door":
-                jump walk_past
+        "Enter Room 206":
+            jump enter_room
+        "Walk past the door":
+            jump walk_past
 
 label enter_room:
 
-    scene bg_room206  # 🔶 Background for Room 206
+    scene hall 
     with fade
 
     "She stepped forward, key clenched tight."
@@ -85,11 +84,11 @@ label enter_room:
 
     "The walls were covered in drawings—crude sketches of a little girl, alone in a room, always watched through a window."
 
-    show music_box on dresser  # 🔶 Image of music box
+
 
     "There was a music box on the dresser."
 
-    play sound "musicbox.ogg"  # 🔶 Creaky music box sound
+    play music "eerie guitar.ogg"   fadein 0.5 fadeout 0.5
 
     "She wound it. The melody was distant, broken."
     "Yuki held it up. Something fluttered inside her chest."
@@ -99,30 +98,30 @@ label enter_room:
     "A soft glow filled the locket. A piece of a memory. She didn’t recognize it. But it hurt."
 
     "★ She had collected a memory fragment."
+    stop music fadeout 0.5
 
-    scene bg_hallway  # 🔶 Back to hallway
+    scene hall  
     with fade
 
     "Yuki walks slowly back to her room, the old music box cradled gently in her hands."
 
     "The hallway is quieter now, but something lingers in the air — a hum, almost like a memory trying to surface."
 
-    scene bg_yuki_room
+    scene bedroom
     with dissolve
 
     "As she closes the door behind her, a soft chime escapes from the box, echoing faintly through the room."
 
-    play sound "chime.ogg"  # 🔶 Optional sound
+    play music 'creepy.ogg' fadein 0.5 fadeout 0.5
+    "Without being prompted, the journal on the table flips open. Ink bleeds across the page like it\'s being written in real time."
 
-    "Without being prompted, the journal on the table flips open. Ink bleeds across the page like it's being written in real time."
+    show screen journal
 
-    show journal_open  # 🔶 Image of open journal
-
-    "Journal:\n\"There was a boy... a boy who always hummed the same tune every time he walked past me. I never dared ask him the name of the song. I wonder if he ever knew I noticed.\""
-
+    $ textjurnal = "\n\"There was a boy... a boy who always hummed the same tune every time he walked past me. I never dared ask him the name of the song. I wonder if he ever knew I noticed.\""
     "The melody coming from the music box matches the one in the memory."
 
     yuki "Why do I remember this now...? Who was he?"
+    hide screen journal
 
     return
 
@@ -134,17 +133,19 @@ label walk_past:
     "She kept cleaning. The key remained cold in her pocket."
     "The hallway flickered once. The door closed on its own."
 
-    scene bg_yuki_room
-    with dissolve
+    scene bedroom
+    with Dissolve(0.5)
 
     "Yuki sits down on the bed, exhausted. The journal stays closed."
 
     "She flips through the empty pages, but they remain blank — unresponsive."
 
     yuki "Why won’t you show me more...? Was I supposed to find something?"
-
-    "A faint message is now scribbled on the journal:\n\"Try again.\""
-
+    show screen journal
+    "A faint message is now scribbled on the journal" 
+    $ textjurnal = '\n\"Try again.\"'
+    'silence'
+    hide screen journal
     return
 
 label leave_key:
@@ -159,12 +160,15 @@ label leave_key:
 
     "As she stands in the middle of the room, the air seems to grow heavier."
 
-    voice "Some doors only open when you're ready to face what\'s behind them."
+    kai "Some doors only open when you're ready to face what\'s behind them."
 
-    play sound "tick_tock.ogg"
+
+
+
+
 
     scene black with fade
 
-    "You wake up at the bar. The day begins again."
+    "Yuki wakes up at the bar. The day begins again."
 
-    jump 
+    return

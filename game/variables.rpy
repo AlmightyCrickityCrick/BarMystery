@@ -24,7 +24,7 @@ image black = im.Scale("black.jpeg", 1920, 1080)
 image white = im.Scale("white.jpeg", 1920, 1080)
 image bar_yuki_kai = im.Scale("bar yuki kai.png", 1920, 1080)
 image kai_png = im.Scale("kai.png", 600, 900)
-
+image hall = im.Scale("hall.jpg", 1920, 1080)
 image room = im.Scale("room.jpg", 1920, 1080)
 image bedroom = im. Scale("bedroom.jpg", 1920, 1080)
 
@@ -41,3 +41,6 @@ define pouring_wine = Character("Bartender", color = "#f85205ff")
 image yuki_drink = im.Scale("drinking yuki.png", 600, 900)
 define yuki_drink = Character("Yuki", color = "#66417fff")
 
+image bar_counter = im.Scale('bar counter.jpg', 1920, 1080)
+image emma = im.Scale('emma.png', 600, 900)
+define emma = Character("Emma", color = "#1a0e32ff")
