@@ -90,9 +90,9 @@ label start:
     
     
     
-
     
-    "He began to prepare an elegant cocktail in reddish colors, the taste of which I could already feel on my lips."
+    
+    
     menu:
         "Go to the old bartender":
             "Yuki blinked. She didn\'t remember walking in, let alone sitting down."
