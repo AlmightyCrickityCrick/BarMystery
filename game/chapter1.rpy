@@ -22,7 +22,9 @@ label sofa:
     hide bartender_talk with moveoutleft
     hide yuki with fade
     hide scene sofa with fade
+    jump bar
 label bar:
-
+    scene 
+    show polish_glass
     "Beside the counter stood an old bartender, motionless except for his hand slowly polishing a glass."
     "His face was lined with age and stories, his gaze unreadable."
