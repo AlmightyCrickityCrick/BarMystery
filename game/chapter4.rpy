@@ -46,10 +46,11 @@ label piano_room:
 
     scene piano
     with fade
+    show yuki at center with moveinleft
 
     "Yuki slips behind the curtains."
 
-    show piano_shadow
+    
     "A dusty piano stands in the half-light."
 
     menu:
@@ -91,6 +92,8 @@ label journal_scene:
 
     scene bedroom
     with fade
+    show yuki at center with moveinright
+
 
     "She rushes upstairs."
 
@@ -118,10 +121,12 @@ label journal_scene:
 
 label journal_accept:
 
-    show white
+    scene white
     play music 'ambient.ogg' fadein 0.5 fadeout 0.5
 
     "The journal burns bright. Her vision blurs. Time folds."
+    scene fire
+    with Dissolve(2.0)
 
     stop music fadeout 1.0
 
@@ -129,7 +134,7 @@ label journal_accept:
 
 label journal_refuse:
 
-    show kai_inv at center
+    show kai_inv at right with fade
     "The glow fades. The room darkens."
 
     kai "You’re not ready yet."
@@ -175,7 +180,7 @@ label hidden_room_path:
     "Yuki walked down the hallway, the key warm in her hand."
     "The door creaked open."
 
-    "Inside, the room was cluttered with fragments of forgotten memories: photographs, letters, a cracked mirror."
+    "Inside, the room was cluttered with fragmentfs of forgotten memories: photographs, letters, a cracked mirror."
 
     yuki "This... this is me. And him."
     yuki "Who were we?"
@@ -190,6 +195,10 @@ label hidden_room_path:
             jump look_mirror
 
 label read_letters:
+    scene bedroom
+    show yuki_desperated at center with fade
+    show script at center
+
     "She read the letters. They spoke of loss, longing, and a promise broken by tragedy."
     "The boy had written: 'If I’m gone, remember the tune.'"
     'This is....... Kai?'
@@ -221,6 +230,10 @@ label confront_bartender:
             jump bartender_why
 
 label bartender_full_story:
+    scene bar_side
+    with fade
+    show yuki at center with moveinleft
+    show bartender at right with moveinright
     bartender "You lost everything. Him… yourself. You asked to forget. But forgetting doesn’t heal."
 
     jump embrace_or_resist
@@ -267,6 +280,7 @@ label ending_a:
 
     stop music fadeout 2.0
     scene white
+    show yuki at center with fade
     with Dissolve(3.0)
 
     "Yuki uncovers her past: a tragic love story, a terrible loss, and her own choice to forget to survive."
@@ -282,7 +296,8 @@ label ending_a:
 label ending_b:
 
     stop music fadeout 1.5
-    scene bg_side
+    scene side_bar
+    show yuki at center with fade
     with Dissolve(3.0)
 
     "Yuki faces the harsh truth—but cannot forgive herself."

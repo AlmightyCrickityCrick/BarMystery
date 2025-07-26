@@ -78,6 +78,7 @@ label enter_room:
 
     scene hall 
     with fade
+    show yuki at center with moveinright
 
     "She stepped forward, key clenched tight."
     "The doorknob turned with a whisper. The air inside was colder."
@@ -102,6 +103,7 @@ label enter_room:
 
     scene hall  
     with fade
+    show yuki at center with moveinleft
 
     "Yuki walks slowly back to her room, the old music box cradled gently in her hands."
 
@@ -109,6 +111,7 @@ label enter_room:
 
     scene bedroom
     with dissolve
+    show yuki at center with moveinright
 
     "As she closes the door behind her, a soft chime escapes from the box, echoing faintly through the room."
 
