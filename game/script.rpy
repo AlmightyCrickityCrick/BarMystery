@@ -90,7 +90,7 @@ label start:
     
     
     
-    
+
     
     
     menu:
@@ -203,7 +203,7 @@ label start:
     "And as her eyes moved across the page, she felt something stirring inside her. "
     "Something old. "
     "Something broken…"
-    jump chapter_2_start
+    
 
 
 
