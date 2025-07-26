@@ -6,7 +6,7 @@ label beginning:
     jump sofa
 label sofa:
     scene sofa with fade 
-    show yuki_mouth at right with fade 
+    show yuki_mouth at right ease in
     "Yuki opened her eyes."
     "Everything felt familiar but twisted, like a dream she had dreamed too many times."
     hide yuki_mouth
@@ -24,7 +24,15 @@ label sofa:
     hide scene sofa with fade
     jump bar
 label bar:
-    scene 
-    show polish_glass
-    "Beside the counter stood an old bartender, motionless except for his hand slowly polishing a glass."
+    scene bar
+    show polish_glass at right
+    "Beside the counter stood an bartender, motionless except for his hand slowly polishing a glass."
+    show yuki with moveinleft
+    hide polish_grass
     "His face was lined with age and stories, his gaze unreadable."
+    show pouring_wine at right
+    "He began to prepare an elegant cocktail in reddish colors, the taste of which I could already feel on my lips."
+    hide pouring_wine
+    hide yuki
+    show bartender_talk at left
+    show yuki_drink at right

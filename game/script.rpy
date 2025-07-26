@@ -87,11 +87,11 @@ label start:
     
     
     
-    "Beside the counter stood an old bartender, motionless except for his hand slowly polishing a glass."
-    "His face was lined with age and stories, his gaze unreadable."
     
-    scene bar
-    show obpourdrink at right
+    
+    
+
+    
     "He began to prepare an elegant cocktail in reddish colors, the taste of which I could already feel on my lips."
     menu:
         "Go to the old bartender":
@@ -210,5 +210,5 @@ label start:
 
 
 
-    jump chapter_2_start
+
     return
