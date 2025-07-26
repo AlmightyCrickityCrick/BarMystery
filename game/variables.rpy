@@ -43,6 +43,9 @@ define yuki_drink = Character("Yuki", color = "#66417fff")
 
 image bar_counter = im.Scale('bar counter.jpg', 1920, 1080)
 image emma = im.Scale('emma.png', 600, 900)
-define emma = Character("Emma", color = "#1a0e32ff")
-define scared2 = Character("Yuki", color = "#66417fff")
-image scared2 = im.Scale("scared2.png", 600, 900)
+define emmakey = Character("Emma", color = "#1a0e32ff")
+image emmakey = im.Scale('emmakey.png', 600,900)
+
+image piano = im.Scale("piano.png", 1920, 1080)
+image script = im.Scale("script.png", 800, 1000)
+image fire = im.Scale("fire.png", 1920, 1080)

@@ -62,7 +62,7 @@ label downstairs:
         'Everyone has problems':
             s_stranger 'Yeah. Guess that\'s what people say when they don’t want to feel too much.
             Never mind.'
-            jump yuki_room
+            # jump yuki_room
             jump no_journal
             return
 
@@ -77,19 +77,10 @@ label downstairs:
 
 
 
-            jump yuki_room
-            yuki 'Still blank. It\'s like it\'s waiting for something...'
-            'Let\'s write in journal.. Huh?? Try again'
-            yuki 'Memories...?'
-            yuki 'What is this place really trying to show me?'
-            'She turns off the small lamp and lays back on the bed, eyes staring at the ceiling.'
-            yuki 'I feel like Im forgetting something important. But… what?'
+            jump no_journal
 
 
-            
-
-    return
-            
+            return
 
 screen journal:
     
@@ -127,6 +118,7 @@ label yuki_room:
     yuki '\"I can\'t remember the last time I felt this tired. I don\'t know what\'s happening to me, but I feel like I\'m losing myself.\"'
     hide screen journal
     $ textjurnal = ""
+    jump chapt3_start
     
 #journal entry  
             
