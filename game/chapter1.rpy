@@ -37,24 +37,49 @@ label bar:
     
     hide yuki with Dissolve(0.5)
     hide pouring_wine
-    show polish_glass at right
-    show yuki_drink at left
-
 label menu1:
+    scene bar
+    show polish_glass at right
+    show yuki_drink at left 
+
+
     menu:
         "Go to the old bartender":
             "Yuki blinked. She didn\'t remember walking in, let alone sitting down."
             "Still, her throat felt dry. Without replying, she nodded."
             bartender "After all, you can never resist my mastery of making drinks."
-            jump menu1
+            #jump 
+            hide scene bar
         "Try to exit the bar":
             scene dooropen
             show yuki at center
             "Clearly Yuki already stands at the door but…"
-            hide yuki
-            show yuki_scared at center
+            
+
             "Before she can grab the doorknob, a shiver runs down her spine."
             "In the end…"
-            scene bar1
-            show yuki at Position(xpos= 400, ypos= 1300)
-            show obpourwine2
+            hide yuki
+            show scared2 at center
+            show white with Dissolve(0.1)
+            hide white
+            show white with Dissolve(0.1)
+            hide white
+            show white with Dissolve(0.1)
+            hide white
+            show white with Dissolve(0.1)
+            hide white
+            hide scared2
+            show yuki_scared at center
+            show white with Dissolve(0.1)
+            hide white
+            show white with Dissolve(0.1)
+            hide white
+            show white with Dissolve(0.1)
+            hide white
+            show white with Dissolve(0.1)
+            hide scene dooropen with Dissolve(0.1)
+            hide white
+            hide yuki_scared 
+            show black with Dissolve(1.0)
+            hide black with fade
+            jump menu1 

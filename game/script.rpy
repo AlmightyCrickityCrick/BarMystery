@@ -31,6 +31,7 @@ image yuki_scared = im.Scale("yuki scared.png", 700, 1000)
 
 
 label start:
+    play music "ambience.ogg" fadein 0.5
     scene black
     "Darkness"
     "Silence"
@@ -64,7 +65,7 @@ label start:
     "A flicker"
     "A breath..."
     hide white with fade
-
+    stop music fadeout 0.5
     jump beginning
     return
 
