@@ -6,14 +6,14 @@ image begin = im.Scale("begin.png", 1920, 1080)
 image bartender = im.Scale("bartender.png", 700, 1000)
 image yuki_scared = im.Scale("yuki scared.png", 600, 900)
 image yuki_desperated = im.Scale("desperated.png", 600, 900)
-image yuki_tired = im.Scale("tired.png", )
+image yuki_tired = im.Scale("tired.png", 600, 900)
 image yuki_scared = im.Scale("yuki scared.png", 600, 900)
 image bar1 = im.Scale("bar1.jpg", 1920, 1080)
 image sleepy = im.Scale("sleepy.png", 600, 900)
 image tired = im.Scale("tired.png", 600, 900)
 
-
-
+image emma = im.Scale("emma.png", 600, 900)
+define emma = Character(name = "Emma", color = "#8a2f3cff")
 
 
 image s_stranger = im.Scale("silver stranger.png", 700, 1000)
@@ -34,7 +34,7 @@ image kai_png = "kai.png"
 image yuki_scared = im.Scale("yuki scared.png", 600, 900)
 
 image dooropen = im.Scale("dooropen.jpg", 1920, 1080)
-image bedroom = im.Scale("bed.jpg", 1920, 1080)
+image bedroom = im.Scale("bedroom.jpg", 1920, 1080)
 
 
 image yukidrink = im.Scale("yukidrink.png", 600, 900)

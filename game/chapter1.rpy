@@ -3,3 +3,5 @@ label beginning:
     "She sat on a worn leather barstool in the corner of a dimly lit lounge."
     "The air smelled of whiskey, wood, and something older—like dust and time. "
     
+    jump chapter_2_start
+    return
