@@ -1,11 +1,12 @@
-
-
+default textjurnal=""
 label chapter_2_start:
+    play music 'despair.ogg' fadein 1.0 fadeout 2.0
     scene bar
     show yuki at left with fade
     'Yuki opened her eyes to the familiar scent of aged wood and citrus cleaner. She was still here. Still in Déjà Vu.'
     yuki '\"So it was not a dream...\"'
     show bartender at right with moveinright
+    stop music fadeout 1.0
     bartender 'Ah, you\'re awake. Hope you slept well. I could use an extra pair of hands downstairs. You up for helping around the bar today?'
     menu optional_name:
         'Nod and agree to help':
@@ -90,6 +91,21 @@ label downstairs:
     return
             
 
+screen journal:
+    frame:
+        background Null()
+        add "journal open.png" xsize 800 ysize 1200
+        xalign 0.3
+        yalign 0
+        xsize 200
+        ysize 200
+    vbox:
+        box_wrap True
+        xmaximum 0.5
+    hbox xalign 0.45 yalign 0.45 box_wrap True:
+        xmaximum 400
+        text textjurnal size 25 color "#000000" ysize 50 
+
 label yuki_room:
     scene bedroom
     show yuki at center with fade
@@ -99,9 +115,12 @@ label yuki_room:
     'She sits on the edge of the bed.'
     'The journal lies untouched on the nightstand, just like the night before.'
     yuki ' Huh? What\'s going on...?'
+    show screen journal
     'The journal opens on its own. A new page reveals itself, written in trembling ink.'
-
+    $ textjurnal = "I used to speak into silence. \nWords floated like dust in an empty house— \nno one there to catch them.\nNo arms ever reached out. No eyes ever stayed.\nThey were always busy, always tired,\nalways somewhere else.\nAnd I—I learned to shrink.\nTo disappear, so they wouldn’t have to.\nSome nights I’d pretend I was a ghost.\nAt least ghosts get noticed.\nAt least they make things move."
     yuki '\"I can\'t remember the last time I felt this tired. I don\'t know what\'s happening to me, but I feel like I\'m losing myself.\"'
+    $ textjurnal = ""
+    
 #journal entry  
             
 label no_journal:
@@ -116,6 +135,6 @@ label no_journal:
             
 
     return
-    jump chapt_3
+    
 
 
