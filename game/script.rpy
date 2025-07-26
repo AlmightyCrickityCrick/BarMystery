@@ -56,14 +56,14 @@ label start:
     show white with Dissolve(0.1)
     hide white
     hide bar
-
+    scene bar
     show black
     show white with Dissolve(3.0)
     "Then..light"
-    
+    hide scene bar
     "A flicker"
     "A breath..."
-    hide white 
+    hide white with fade
 
     jump beginning
     return
@@ -77,16 +77,16 @@ label start:
 
 
     
-    "Yuki opened her eyes."
-    "Everything felt familiar but twisted, like a dream she had dreamed too many times."
-    yuki "Where... am I?"
-    "Before she could question further, a gruff voice called out from the bar."
+    
+    
+    
+    
 
-    scene bar1
-    show ob at left #Position(xpos= 300, ypos= 1500)
-    ob "What's wrong with you these days? "
-    ob "You fell asleep again."
-    ob "I, an old man, had to do all the hard work."
+    
+
+    
+    
+    
     "Beside the counter stood an old bartender, motionless except for his hand slowly polishing a glass."
     "His face was lined with age and stories, his gaze unreadable."
     
