@@ -296,7 +296,7 @@ label ending_a:
 label ending_b:
 
     stop music fadeout 1.5
-    scene side_bar
+    scene bar_side
     show yuki at center with fade
     with Dissolve(3.0)
 
