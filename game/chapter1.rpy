@@ -11,13 +11,18 @@ label sofa:
     "Everything felt familiar but twisted, like a dream she had dreamed too many times."
     hide yuki_mouth
     show yuki at right with fade 
+    
+    voice "audio/voices/yuki/yuki_1_where.ogg"
     yuki_mouth "Where... am I?"
     show bartender at left with moveinleft
     "Before she could question further, a gruff voice called out from the bar."
     hide bartender with Dissolve(0.5)
     show bartender_talk at left 
+    voice "audio/voices/bartender/bartender_1_whats_wrong.ogg"
     bartender_talk "What's wrong with you these days? "
+    voice "audio/voices/bartender/bartender_2_you_fell.ogg"
     bartender_talk "You fell asleep again."
+    voice "audio/voices/bartender/bartender_3_hard_work.ogg"
     bartender_talk "I had to do all the hard work."
     hide bartender_talk with moveoutleft
     hide yuki 
@@ -28,6 +33,7 @@ label bar:
     show polish_glass at right
     "Beside the counter stood an bartender, motionless except for his hand slowly polishing a glass."
     show yuki at left with moveinleft
+    voice "audio/voices/bartender/bartender_4_you_look_like.ogg"
     polish_glass "You look like you would rather go for something strong today,Yuki."
     hide polish_glass with Dissolve(0.5)
     show pouring_wine at right
@@ -104,7 +110,9 @@ label bar2:
     hide yuki_drink
     show yuki at left
     show bartender_talk at right
+    voice "audio/voices/bartender/bartender_5_you_have_refreshed.ogg"
     bartender_talk "Now that you've refreshed a bit, you should get to work. "
+    voice "audio/voices/bartender/bartender_6_lazy_people.ogg"
     bartender_talk "DejaVu doesn’t run on lazy people."
 
     "\"DejaVu? Is this the bar’s name?\""
@@ -112,6 +120,7 @@ label bar2:
     hide bartender_talk
     show bartender_talk at right
 
+    voice "audio/voices/bartender/bartender_7_cleaning_up_mess.ogg"
     bartender_talk "You can start by cleaning the mess from the tables."
     "His smile is thin, polite. But there’s a weight behind it—like it’s not really a question."
     "Yuki looks at him, fingers still warming around the empty glass."
@@ -127,18 +136,24 @@ label clean:
         "Refuse to help":
             hide yuki
             show yuki_angry_talk at left
+            voice "audio/voices/yuki/yuki_2_not_cleaning_tables.ogg"
             yuki "I’m not cleaning tables. I don’t even know why I’m here."
             "The bartender’s smile fades."
+            voice "audio/voices/bartender/bartender_8_that_so.ogg"
             bartender_talk "That so?"
             "He leans in slightly, voice sharpening."
+            voice "audio/voices/bartender/bartender_9_getting_cheeky.ogg"
             bartender_talk "Getting cheeky, are we? No cleaning, no room."
+            voice "audio/voices/bartender/bartender_10_crawling_things.ogg"
             bartender_talk "You’ll spend the night out here, in the dark, with the things that crawl in when the doors close."
             hide yuki_angry_talk
             show scared2 at left 
             "Yuki feels a cold prickle on the back of her neck. She swallows."
             "\"Okay... definitely not just a dream.\""
+            voice "audio/voices/yuki/yuki_3_fine_I'll_do_it.ogg"
             yuki "...Fine. I’ll do it."
             "His face relaxes."
+            voice "audio/voices/bartender/bartender_11_thats_more_like_it.ogg"
             bartender_talk "That’s more like it. You’ll thank me later."
             hide scared2
 
@@ -158,10 +173,12 @@ label day1:
     "A journal."
     "Its leather cover was cracked, the pages yellowed."
 
+    voice "audio/voices/yuki/yuki_4_whose_journal.ogg" 
     yuki " Whose is this?"
     "The first page was blank."
     "Then, as she flipped, words began to appear, ink flowing across the paper like blood from a fresh wound: \“Dear Yuki...\” "
     "Her hands trembled."
+    voice "audio/voices/yuki/yuki_5_what_the_hell.ogg" 
     yuki " What the hell is this...?"
     "Her breath caught."
     "And as her eyes moved across the page, she felt something stirring inside her. "

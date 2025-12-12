@@ -1,7 +1,7 @@
 ﻿
 define yuki = Character(name = "Yuki", color = "#66417fff")
 define kai = Character(name = "Kai", color = "#020a52ff")
-define bartender = Character(name = "Bartender", color = "#f85205ff")
+define bartender = Character(name = "Bartender", color = "#f85205ff", voice_tag="bartender")
 
 
 
