@@ -36,6 +36,7 @@ label walk_away:
 
     play music "creepy.ogg"  fadein 0.5 fadeout 0.5
 
+    voice "audio/voices/kai/kai_2_walk_away.ogg"
     kai "You always walk away before the truth."
 
     "Yuki returns, now shaken."
@@ -103,6 +104,7 @@ label journal_scene:
     show screen journal
     'Words are scribbled as if written in a dream'
     $ textjurnal ='\nI waited every night. I couldn’t leave. I couldn’t forget.' 
+    voice "audio/voices/yuki/yuki_15_moan_my_dear_one.ogg"
     yuki 'Oh... That was him... My dear one.'
     $ textjournal ='\nNot until he walked through that door again… But he never did.'
 
@@ -136,7 +138,7 @@ label journal_refuse:
 
     show kai_inv at right with fade
     "The glow fades. The room darkens."
-
+    voice "audio/voices/kai/kai_3_not_ready_yet.ogg"
     kai "You’re not ready yet."
 
     "She lies back down. The day resets."
@@ -162,7 +164,9 @@ label the_truth:
 
     show yuki at center
 
+    voice "audio/voices/yuki/yuki_16_i_cant_keep_running.ogg"
     yuki "I can’t keep running from this."
+    voice "audio/voices/yuki/yuki_17_i_have_to_find_out.ogg"
     yuki "I have to find out who I really am…"
 
     menu:
@@ -218,9 +222,11 @@ label confront_bartender:
 
     "Yuki found the bartender polishing glasses behind the counter."
     "His eyes met hers—calm, knowing."
-
+    
+    voice "audio/voices/yuki/yuki_18_i_need_answers.ogg"
     yuki "I need answers. Who am I? Why am I trapped here?"
 
+    voice "audio/voices/bartender/bartender_21_some_truth_hurt.ogg"
     bartender "Some truths hurt, Yuki. But it’s time you faced them."
 
     menu:
@@ -234,6 +240,7 @@ label bartender_full_story:
     with fade
     show yuki at center with moveinleft
     show bartender at right with moveinright
+    voice "audio/voices/bartender/bartender_22_you_lost_everything.ogg"
     bartender "You lost everything. Him… yourself. You asked to forget. But forgetting doesn’t heal."
 
     jump embrace_or_resist
@@ -289,6 +296,7 @@ label ending_a:
 
     "The bar fades. She is free at last."
 
+    voice "audio/voices/yuki/yuki_19_I_remember_now.ogg"
     yuki "I remember now... and I forgive myself."
 
     return

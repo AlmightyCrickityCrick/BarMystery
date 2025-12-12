@@ -8,18 +8,24 @@ label chapt3_start:
     "Yuki opened her eyes again. Third time."
     "The bar was silent. Early morning dust hung in the air like a second breath."
 
+    voice "audio/voices/yuki/yuki_12_still_here.ogg"
     yuki "Still here… Still Déjà Vu…"
 
     show bartender at left
 
+    voice "audio/voices/bartender/bartender_17_getting_used_to.ogg"
     bartender "You’re getting used to this place, huh?"
+    voice "audio/voices/bartender/bartender_18_dont_get_comfy.ogg"
     bartender "Well, don’t get too comfy. Work doesn’t do itself."
 
     "He threw her a rag without even looking."
 
+    voice "audio/voices/bartender/bartender_19_take_your_pickle.ogg"
     bartender "The counters, the bottles, the floors. Take your pick."
 
     show yuki at center
+    
+    voice "audio/voices/yuki/yuki_13_get_over_it.ogg"
     yuki "Fine... Let’s get it over with."
 
     "Her fingers curled around the damp cloth. Same motions. Same silence. Something in the air felt different, though."
@@ -33,6 +39,7 @@ label chapt3_start:
     play sound "scary.ogg" fadein 0.5 fadeout 0.5
 
     "A low mechanical click."
+    play sound "low_mechanical_click.ogg"
 
     show emmakey at right  
 
@@ -43,8 +50,10 @@ label chapt3_start:
     "Yuki blinked. It wasn’t there a second ago."
     "The woman vanished the moment Yuki turned away. No goodbye. No trace."
 
+    voice "audio/voices/yuki/yuki_14_did_else_see.ogg"
     yuki "Did anyone else see…?"
 
+    voice "audio/voices/bartender/bartender_20_see_what.ogg"
     bartender "See what?"
 
     "She walked over to the booth. The key was still there, cold in her hand. Faded engraving: '206'."
@@ -164,6 +173,7 @@ label leave_key:
 
     "As she stands in the middle of the room, the air seems to grow heavier."
 
+    voice "audio/voices/kai/kai_1_some_doors.ogg"
     kai "Some doors only open when you're ready to face what\'s behind them."
 
 
